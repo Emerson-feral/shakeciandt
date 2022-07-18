@@ -17,18 +17,17 @@ public class Cardapio {
     }
 
     public void adicionarIngrediente(Ingrediente ingrediente,Double preco){
-        if(preco == null){
+        if(preco <= 0){
             throw new IllegalArgumentException("Preco invalido.");
         }
         precos.put(ingrediente,preco);
     }
 
     public boolean atualizarIngrediente(Ingrediente ingrediente,Double preco){
-       //TODO
         var itemEncontrado = precos.get(ingrediente);
 
         if(itemEncontrado != null){
-            if(itemEncontrado < 0){
+            if(preco <= 0){
                 throw new IllegalArgumentException("Preco invalido.");
             }
             precos.replace(ingrediente,preco);
