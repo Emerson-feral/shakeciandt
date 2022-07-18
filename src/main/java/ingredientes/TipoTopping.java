@@ -1,5 +1,5 @@
 package ingredientes;
 
 public enum TipoTopping {
-    AVEIA,MEL,CHOCOLATE;
+    Aveia,Mel,Chocolate;
 }

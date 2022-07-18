@@ -1,5 +1,5 @@
 package ingredientes;
 
 public enum TipoFruta {
-    MORANGO,BANANA,ABACATE;
+    Morango,Banana,Abacate;
 }
