@@ -10,17 +10,19 @@ import produto.TipoTamanho;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 public class Program {
     public static void main(String[] args) {
         Cliente cliente = new Cliente(1,"Pedro","pedro@email.com");
 
-        Base sorvete = new Base(TipoBase.SORVETE);
-        Base iogurte = new Base(TipoBase.IORGUTE);
-        Fruta banana = new Fruta(TipoFruta.BANANA);
-        Fruta morango = new Fruta(TipoFruta.MORANGO);
-        Topping mel = new Topping(TipoTopping.MEL);
-        Topping aveia = new Topping(TipoTopping.AVEIA);
+        Base sorvete = new Base(TipoBase.Sorvete);
+        Base iogurte = new Base(TipoBase.Iorgute);
+        Fruta banana = new Fruta(TipoFruta.Banana);
+        Fruta morango = new Fruta(TipoFruta.Morango);
+        Topping mel = new Topping(TipoTopping.Mel);
+        Topping aveia = new Topping(TipoTopping.Aveia);
 
         Cardapio cardapio = new Cardapio();
 
